@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+</head>
+
+<body>
+    <div class="main">
+        <h3>今日は何の日？</h3>
+        <h5>今日[{{ date }}]は何の日でしょうか？<br></h5>
+        <ul>
+            {% for i in elems %}
+            <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="wikilink">
+        <a href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8">@Wikipedia</a>
+    </div>
+</body>
+
+</html>
