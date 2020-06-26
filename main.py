@@ -32,4 +32,7 @@ def whatday():
     return render_template('index.html', title='What Day Today', date=date, elems=csvRow)
  
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run()
+======
+>>>>>>> origin/master
