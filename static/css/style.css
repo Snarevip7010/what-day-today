@@ -1,0 +1,73 @@
+@charset 'utf-8';
+
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+
+    body{
+        background: #ffd1d1;
+    }
+
+    h3{
+        color: grey;
+        text-align: center;
+    }
+
+    h5{
+        color: grey;
+        text-align: center;
+    }
+
+    ul{
+        color: grey;
+        list-style-type: circlee;
+    }
+
+    .main{
+        background:#ffffff;
+        width: 620px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    .wikilink{
+        float: right;
+    }
+}
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    body{
+        background: #ffd1d1;
+    }
+    
+    h3{
+        color: grey;
+        text-align: center;
+    }
+    
+    h5{
+        color: grey;
+        text-align: center;
+    }
+    
+    ul{
+        color: grey;
+        list-style-type: circlee;
+    }
+    
+    .main{
+        background:#ffffff;
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        display: table-cell;
+        vertical-align: middle;
+    
+    }
+
+    .wikilink{
+        text-align: center;
+    }
+}
