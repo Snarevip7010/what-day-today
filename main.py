@@ -20,11 +20,11 @@ def whatday():
     soup = BeautifulSoup(r.text, 'html.parser')
 
     # soup.find_allを利用して今日は何の日を取得する
-    elems = soup.find_all(id="mf-itn")
+    elems = soup.find_all(id="on_this_day")
 
     # for loopを利用してリスト部分を取得する
+    csvRow = []
     for row in elems:
-        csvRow = []
         for cell in row.findAll('li'):
             csvRow.append(cell.get_text())
 
@@ -32,7 +32,7 @@ def whatday():
     return render_template('index.html', title='What Day Today', date=date, elems=csvRow)
  
 if __name__ == '__main__':
-<<<<<<< HEAD
-    app.run()
-======
->>>>>>> origin/master
+#<<<<<<< HEAD
+    app.run(debug=True)
+#======
+#>>>>>>> origin/master
